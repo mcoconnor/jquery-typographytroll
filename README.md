@@ -32,4 +32,4 @@ Typography Troll also takes two optional arguments: `fontFamilies` and `fallback
 
 How it works
 ------------
-Typography Troll works by first finding all of the text nodes in the  DOM in the selected elements and then wrapping each character in them with a `span`.  The span is assigned a random `font-family` from the options given in the `fontFamily` argument.  The other options in the list are used as fallbacks (so your text won't look super ugly if the user is missing a few fonts) with the final option being the value of the `fallback` argument.
+Typography Troll works by first finding all of the text nodes in the  DOM in the selected elements and then wrapping each character in them with a `span`.  The span is assigned a random `font-family` from the options given in the `fontFamilies` argument.  The other options in the list are used as fallbacks (so your text won't look super ugly if the user is missing a few fonts) with the final option being the value of the `fallback` argument.
