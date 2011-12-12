@@ -22,7 +22,7 @@
 	//get the text nodes
     this.contents().each( function() {
     var fn = arguments.callee;
-      if ( this.nodeType == 3 ) 
+      if (this.nodeType == 3) 
         ret.push(this);
       else $(this).contents().each(fn);
   });
@@ -39,10 +39,10 @@
   }
   $(ret).replaceWith(function(){
 	var pieces = [spans[0].substr(7)];
-    var chars = this.data.trim().split("");
+    var chars = this.data.split("");
 	for (i in chars){
 		pieces.push(chars[i]);
-		if (i != pieces.length-1) pieces.push(spans[Math.floor(Math.random()*spans.length)]);
+		if (!/\s/.test(chars[i]) && i != pieces.length-1) pieces.push(spans[Math.floor(Math.random()*spans.length)]);
 	}
 	pieces.push('</span>');
 	return pieces.join("");
