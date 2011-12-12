@@ -3,13 +3,19 @@
 <head>
   <meta charset='utf-8'>
 
-  <title>mcoconnor/jquery-typographytroll @ GitHub</title>
+  <title>jQuery Typography Troll</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://raw.github.com/mcoconnor/jquery-typographytroll/master/jquery.typographytroll.js" type="text/javascript"></script>
+  <!--
+  <script src="cufon-yui.js" type="text/javascript"></script>
+  <script src="Nimbus_Sans_L_400.font.js" type="text/javascript"></script>
+  -->
 
   <style type="text/css">
     body {
       margin-top: 1.0em;
       background-color: #ffffff;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
+      font-family: Helvetica, Arial, FreeSans, sans-serif;
       color: #000000;
     }
     #container {
@@ -24,10 +30,17 @@
     a { color: #000000; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
+    .large { font-size: 3em; }
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
+
+  <script>
+    $(function(){$('div.demo').typographyTroll()});
+    //Cufon.replace('body', { fontFamily: 'Nimbus Sans L' });
+  </script>
+
 </head>
 
 <body>
@@ -42,36 +55,29 @@
         <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="https://github.com/mcoconnor/jquery-typographytroll">jQuery Typography Troll</a>
-      <span class="small">by <a href="https://github.com/mcoconnor">mcoconnor</a></span></h1>
+    <h1><a href="https://github.com/mcoconnor/jquery-typographytroll">jQuery Typography Troll</a></h1>
 
     <div class="description">
       A jQuery plugin for confusing typography geeks
     </div>
 
-    
+    <div class="demo">
+        <p>Is this Helvetica? Or Arial?  If you aren't sure, there are <a href="http://www.ms-studio.com/articlesarialsid.html">plenty</a> <a href="http://ilovetypography.com/2007/10/06/arial-versus-helvetica/">of</a> <a href="http://ragb.ag/post/187708731/arial-helvetica-on-friday-i-hosted-a-screening">resources</a> on the interwebz to help you figure it out, and even more <a href="http://www.ms-studio.com/articles.html">vitriol</a> explaining <a href="http://www.helveticafilm.com/">why it matters</a>.</p>
+        <p>Inconclusive results?  Here's some more sample text, in large print for your viewing pleasure:</p>
+        <p class="large">Interrupt aardvark JUGGLE ROCCOCO flitter</p>
+        <p>If you've got both fonts on your system (sorry, Windows users), it's obviously both. Check out the <a href="https://github.com/mcoconnor/jquery-typographytroll/blob/master/README.md">README</a> for how to annoy people with nothing beter to do than identify typefaces on the web.</p>
 
-    
+    </div>
 
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>Michael O'Connor (michael@mcoconnor.net)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p> (michael@mcoconnor.net)<br/>      </p>
-    
+      <h2>Author</h2>
+      <p><a href="http://www.mcoconnor.net">Michael O'Connor</a>
+<br/>      </p>   
 
     <h2>Download</h2>
     <p>
       You can download this project in either
       <a href="https://github.com/mcoconnor/jquery-typographytroll/zipball/master">zip</a> or
-      <a href="https://github.com/mcoconnor/jquery-typographytroll/tarball/master">tar formats.
+      <a href="https://github.com/mcoconnor/jquery-typographytroll/tarball/master">tar format.
     </p>
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
